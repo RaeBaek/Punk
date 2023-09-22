@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		1466B99D2ABD83C800706084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B99C2ABD83C800706084 /* AppDelegate.swift */; };
 		1466B99F2ABD83C800706084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B99E2ABD83C800706084 /* SceneDelegate.swift */; };
-		1466B9A12ABD83C800706084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9A02ABD83C800706084 /* ViewController.swift */; };
+		1466B9A12ABD83C800706084 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9A02ABD83C800706084 /* BeerViewController.swift */; };
 		1466B9A42ABD83C800706084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466B9A22ABD83C800706084 /* Main.storyboard */; };
 		1466B9A62ABD83C900706084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1466B9A52ABD83C900706084 /* Assets.xcassets */; };
 		1466B9A92ABD83C900706084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1466B9A72ABD83C900706084 /* LaunchScreen.storyboard */; };
+		1466B9B12ABD83F000706084 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9B02ABD83F000706084 /* Beer.swift */; };
+		1466B9B42ABD866500706084 /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9B32ABD866500706084 /* BeerAPI.swift */; };
+		1466B9B72ABD868C00706084 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1466B9B62ABD868C00706084 /* Alamofire */; };
+		1466B9BA2ABD869600706084 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1466B9B92ABD869600706084 /* SnapKit */; };
+		1466B9BC2ABD8BFB00706084 /* APIReqeust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9BB2ABD8BFA00706084 /* APIReqeust.swift */; };
+		1466B9BE2ABD9BEA00706084 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9BD2ABD9BEA00706084 /* Network.swift */; };
+		1466B9C02ABDA0C400706084 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9BF2ABDA0C400706084 /* BeerViewModel.swift */; };
+		1466B9C22ABDA6D500706084 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466B9C12ABDA6D500706084 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1466B9992ABD83C800706084 /* Punk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Punk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1466B99C2ABD83C800706084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1466B99E2ABD83C800706084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1466B9A02ABD83C800706084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1466B9A02ABD83C800706084 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
 		1466B9A32ABD83C800706084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1466B9A52ABD83C900706084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1466B9A82ABD83C900706084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1466B9AA2ABD83C900706084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1466B9B02ABD83F000706084 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		1466B9B32ABD866500706084 /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
+		1466B9BB2ABD8BFA00706084 /* APIReqeust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIReqeust.swift; sourceTree = "<group>"; };
+		1466B9BD2ABD9BEA00706084 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1466B9BF2ABDA0C400706084 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
+		1466B9C12ABDA6D500706084 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1466B9B72ABD868C00706084 /* Alamofire in Frameworks */,
+				1466B9BA2ABD869600706084 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +74,27 @@
 			children = (
 				1466B99C2ABD83C800706084 /* AppDelegate.swift */,
 				1466B99E2ABD83C800706084 /* SceneDelegate.swift */,
-				1466B9A02ABD83C800706084 /* ViewController.swift */,
+				1466B9BF2ABDA0C400706084 /* BeerViewModel.swift */,
+				1466B9A02ABD83C800706084 /* BeerViewController.swift */,
+				1466B9B22ABD864F00706084 /* Network */,
 				1466B9A22ABD83C800706084 /* Main.storyboard */,
 				1466B9A52ABD83C900706084 /* Assets.xcassets */,
 				1466B9A72ABD83C900706084 /* LaunchScreen.storyboard */,
 				1466B9AA2ABD83C900706084 /* Info.plist */,
 			);
 			path = Punk;
+			sourceTree = "<group>";
+		};
+		1466B9B22ABD864F00706084 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1466B9B02ABD83F000706084 /* Beer.swift */,
+				1466B9B32ABD866500706084 /* BeerAPI.swift */,
+				1466B9BB2ABD8BFA00706084 /* APIReqeust.swift */,
+				1466B9C12ABDA6D500706084 /* Router.swift */,
+				1466B9BD2ABD9BEA00706084 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,10 @@
 			dependencies = (
 			);
 			name = Punk;
+			packageProductDependencies = (
+				1466B9B62ABD868C00706084 /* Alamofire */,
+				1466B9B92ABD869600706084 /* SnapKit */,
+			);
 			productName = Punk;
 			productReference = 1466B9992ABD83C800706084 /* Punk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,10 @@
 				Base,
 			);
 			mainGroup = 1466B9902ABD83C800706084;
+			packageReferences = (
+				1466B9B52ABD868C00706084 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1466B9B82ABD869600706084 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1466B99A2ABD83C800706084 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1466B9A12ABD83C800706084 /* ViewController.swift in Sources */,
+				1466B9C02ABDA0C400706084 /* BeerViewModel.swift in Sources */,
+				1466B9A12ABD83C800706084 /* BeerViewController.swift in Sources */,
+				1466B9B42ABD866500706084 /* BeerAPI.swift in Sources */,
 				1466B99D2ABD83C800706084 /* AppDelegate.swift in Sources */,
+				1466B9C22ABDA6D500706084 /* Router.swift in Sources */,
 				1466B99F2ABD83C800706084 /* SceneDelegate.swift in Sources */,
+				1466B9BC2ABD8BFB00706084 /* APIReqeust.swift in Sources */,
+				1466B9BE2ABD9BEA00706084 /* Network.swift in Sources */,
+				1466B9B12ABD83F000706084 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +402,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1466B9B52ABD868C00706084 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1466B9B82ABD869600706084 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1466B9B62ABD868C00706084 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1466B9B52ABD868C00706084 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1466B9B92ABD869600706084 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1466B9B82ABD869600706084 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1466B9912ABD83C800706084 /* Project object */;
 }
