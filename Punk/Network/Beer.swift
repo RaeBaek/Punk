@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - WelcomeElement
+// MARK: - BeerElement
 struct BeerElement: Codable {
     let id: Int
     let name, tagline, firstBrewed, description: String

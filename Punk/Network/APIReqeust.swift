@@ -14,8 +14,9 @@ final class APIReqeust {
     
     private init() { }
     
-    // Result 사용
+    // 이전까지는 Codable 구조체(본 프로젝트에서는 Beer Type)와 Error을 넘겨주는 탈출 클로저로 구현했었음
   //func beers(api: BeerAPI, completionHandler: @escaping (Beer?, Error?) -> Void)
+    // Result 사용
     func beers(api: BeerAPI, completionHandler: @escaping (Result<Beer, Error>) -> Void) {
         AF.request(api.endPoint, method: api.method).responseDecodable(of: Beer.self) { response in
             switch response.result {
@@ -42,7 +43,7 @@ final class APIReqeust {
         }
     }
     
-    // 목적이 다른 함수명으로 명명했지만 내부는 결국 같은 코드를 작성하고 있었다.
+    // 목적이 다른 함수명으로 명명했지만 내부는 결국 같은 코드를 작성하고 있음
     func random(api: BeerAPI, completionHandler: @escaping (Beer?, Error?) -> Void) {
         AF.request(api.endPoint, method: api.method).responseDecodable(of: Beer.self) { response in
             switch response.result {

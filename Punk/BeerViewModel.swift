@@ -9,9 +9,9 @@ import Foundation
 
 final class BeerViewModel {
     
-    
+    //MARK: BeerAPI
     func request(completionHandler: @escaping (Beer) -> Void) {
-        Network.shared.requestAPI(type: Beer.self, api: .beers) { response in
+        Network.shared.requestAPI(type: Beer.self, api: .random) { response in
             switch response {
             case .success(let success):
                 dump(success)
@@ -23,8 +23,9 @@ final class BeerViewModel {
         }
     }
     
+    //MARK: Router
     func requestConvertible(completionHandler: @escaping (Beer) -> Void) {
-        Network.shared.requestConvertible(type: Beer.self, api: .single(id: "200")) { response in
+        Network.shared.requestConvertible(type: Beer.self, api: .single(id: "123")) { response in
             switch response {
             case .success(let success):
                 dump(success)

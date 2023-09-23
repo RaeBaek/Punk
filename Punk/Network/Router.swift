@@ -16,11 +16,13 @@ enum Router: URLRequestConvertible {
     case random
     
     // baseURL 연산 프로퍼티 선언
+    // BeerAPI와 다른점이라면 선언 타입이 String이 아닌 URL이라는 점
     private var baseURL: URL {
         return URL(string: "https://api.punkapi.com/v2/beers")!
     }
     
     // 케이스 별 path 선언
+    // baseURL 뒤에 붙을 path (타입은 String)
     private var path: String {
         switch self {
         case .beers:
@@ -32,6 +34,7 @@ enum Router: URLRequestConvertible {
         }
     }
     
+    // 호출 메서드 (.get)
     var method: HTTPMethod {
         return .get
     }

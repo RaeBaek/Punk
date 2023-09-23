@@ -33,6 +33,7 @@ enum BeerAPI {
         }
     }
     
+    // 호출 메서드 (.get)
     var method: HTTPMethod {
         return .get
     }
